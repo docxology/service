@@ -1,0 +1,514 @@
+
+<Services xmlns="https://www.clinamenic.com/schemas/services/v1">
+<!--  GOVERNANCE SERVICES  -->
+<Service>
+<Metadata>
+<id>1</id>
+<Name>Governance</Name>
+<Category>Governance</Category>
+<Description> Configuration, auditing, and implementation of governance frameworks, specializing in on-chain organizations and smart contract-based structures.</Description>
+<Keywords>governance,dao,smart contracts,onchain organization,audit</Keywords>
+</Metadata>
+<Provider>
+<Name>Clinamenic LLC</Name>
+<ContactPerson>Spencer Saar Cavanaugh</ContactPerson>
+<Website>https://www.clinamenic.com</Website>
+</Provider>
+<Offering>
+<!--  GOVERNANCE AUDIT PACKAGE  -->
+<Package>
+<id>1.1</id>
+<Name>Governance Audit</Name>
+<Description>Analysis and assessment of governance structures with recommendations</Description>
+<Tiers>
+<Tier>
+<id>1.1.1</id>
+<Name>Preliminary</Name>
+<Description>High-level review of governance structures with risk identification</Description>
+<Deliverables>
+<Deliverable>Governance structure assessment</Deliverable>
+<Deliverable>Risk identification report</Deliverable>
+<Deliverable>High-level recommendations</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">2500</BasePrice>
+</Pricing>
+</Tier>
+<Tier>
+<id>1.1.2</id>
+<Name>Comprehensive</Name>
+<Description>Detailed analysis of governance structures with benchmarking and actionable recommendations</Description>
+<Deliverables>
+<Deliverable>In-depth governance structure analysis</Deliverable>
+<Deliverable>Benchmarking against industry standards</Deliverable>
+<Deliverable>Comprehensive recommendations document</Deliverable>
+<Deliverable>Executive presentation of findings</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">5000</BasePrice>
+</Pricing>
+</Tier>
+</Tiers>
+</Package>
+<!--  GOVERNANCE FRAMEWORK PACKAGE  -->
+<Package>
+<id>1.2</id>
+<Name>Governance Framework</Name>
+<Description>Creation and implementation of governance frameworks</Description>
+<Tiers>
+<Tier>
+<id>1.2.1</id>
+<Name>Template + Review</Name>
+<Description>Adaptation of existing governance templates with implementation review</Description>
+<Deliverables>
+<Deliverable>Adapted Pre-Constitutional Governance template</Deliverable>
+<Deliverable>Documented governance framework</Deliverable>
+<Deliverable>Review of technical implementation specifications</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">3500</BasePrice>
+</Pricing>
+</Tier>
+<Tier>
+<id>1.2.2</id>
+<Name>Bespoke + Guided</Name>
+<Description>Design of bespoke governance framework with guided implementation</Description>
+<Deliverables>
+<Deliverable>Discovery workshops</Deliverable>
+<Deliverable>Custom governance framework design</Deliverable>
+<Deliverable>Implementation roadmap</Deliverable>
+<Deliverable>Technical specification workshops</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">7500</BasePrice>
+</Pricing>
+<PreviousWork>
+<Example>
+<Name>Education DAO</Name>
+<URL>https://www.educationdao.xyz/</URL>
+<Description>Entity formatation with integrated smart contracts, custom governance framework design, coaching and guidance provided for team members</Description>
+<Date>2024</Date>
+</Example>
+</PreviousWork>
+</Tier>
+</Tiers>
+</Package>
+<!--  GRANTS PROGRAM PACKAGE  -->
+<Package>
+<id>1.3</id>
+<Name>Grants Program</Name>
+<Description>Design and management of onchain grants programs</Description>
+<Tiers>
+<Tier>
+<id>1.3.1</id>
+<Name>Design</Name>
+<Description>Design of onchain grants program structure and evaluation framework</Description>
+<Deliverables>
+<Deliverable>Grant program structure design</Deliverable>
+<Deliverable>Application process flow</Deliverable>
+<Deliverable>Evaluation criteria framework</Deliverable>
+<Deliverable>Milestone tracking/attestation framework</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">2500</BasePrice>
+</Pricing>
+</Tier>
+<Tier>
+<id>1.3.2</id>
+<Name>Design + Management</Name>
+<Description>Design and management of onchain grants program including tooling setup</Description>
+<Deliverables>
+<Deliverable>Grant program structure design</Deliverable>
+<Deliverable>Application process flow</Deliverable>
+<Deliverable>Evaluation criteria framework</Deliverable>
+<Deliverable>Milestone tracking/attestation framework</Deliverable>
+<Deliverable>Onchain tooling setup (e.g., Grants Stack)</Deliverable>
+<Deliverable>Management of one grant round</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">Custom</BasePrice>
+</Pricing>
+<PreviousWork>
+<Example>
+<Name>OpenCivics</Name>
+<URL>https://www.educationdao.xyz/</URL>
+<Description>Deployed and operated three quarterly grant rounds using quadratic funding smart contracts, disbursing over a total of $100,000 in stablecoins.</Description>
+<Date>2023 - 2024</Date>
+</Example>
+</PreviousWork>
+</Tier>
+</Tiers>
+</Package>
+<!--  GOVERNANCE RETAINERS  -->
+<Retainer>
+<id>1.4</id>
+<Name>Governance Advisory</Name>
+<Description>Ongoing strategic governance guidance</Description>
+<Services>
+<Service>Two 1-hour strategy calls per month</Service>
+<Service>Limited email support for strategic questions (48hr response time)</Service>
+<Service>Diagnostic assessment of key governance processes and documents</Service>
+</Services>
+<Pricing>
+<RecurringPrice frequency="monthly" currency="USD">1200</RecurringPrice>
+<MinimumTerm unit="months">2</MinimumTerm>
+</Pricing>
+</Retainer>
+<Retainer>
+<id>1.5</id>
+<Name>Governance Council</Name>
+<Description>Facilitation support for regular governance meetings and proposal reviews</Description>
+<Services>
+<Service>Bi-weekly governance meeting facilitation</Service>
+<Service>Review of up to 5 governance proposals per month</Service>
+<Service>Monthly governance process optimization recommendations</Service>
+</Services>
+<Pricing>
+<RecurringPrice frequency="monthly" currency="USD">3000</RecurringPrice>
+<MinimumTerm unit="months">3</MinimumTerm>
+</Pricing>
+</Retainer>
+</Offering>
+</Service>
+<!--  KNOWLEDGE MANAGEMENT SERVICES  -->
+<Service>
+<Metadata>
+<id>2</id>
+<Name>Knowledge</Name>
+<Category>Knowledge</Category>
+<Description>Design, setup, and optimization of personal and organizational knowledge bases (wikis), specializing in open, local-first architectures.</Description>
+<Keywords>knowledge management,wiki,quartz,obsidian,cursor,documentation</Keywords>
+</Metadata>
+<Provider>
+<Name>Clinamenic LLC</Name>
+<ContactPerson>Spencer Saar Cavanaugh</ContactPerson>
+<Website>https://www.clinamenic.com</Website>
+</Provider>
+<Offering>
+<!--  PERSONAL KNOWLEDGE MANAGEMENT  -->
+<Package>
+<id>2.1</id>
+<Name>Personal Knowledge Base</Name>
+<Description>Setup of personal knowledge bases powered by Quartz, Obsidian, and Cursor</Description>
+<Tiers>
+<Tier>
+<id>2.1.1</id>
+<Name>Standard</Name>
+<Description>Creation of a git-enabled Quartz knowledge base optimized for Obsidian/Cursor</Description>
+<Deliverables>
+<Deliverable>Creation of a git-enabled Quartz knowledge base</Deliverable>
+<Deliverable>Basic personalization of the boilerplate Quartz architecture</Deliverable>
+<Deliverable>CNAME and DNS configuration</Deliverable>
+<Deliverable>Custom rules framework for Cursor</Deliverable>
+<Deliverable>Client-controlled Git repo with guidance</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">750</BasePrice>
+<Discounts>
+<Discount>
+<Condition>Promotional footer placement</Condition>
+<Amount currency="USD">100</Amount>
+</Discount>
+<Discount>
+<Condition>Payment in DAI or USDC</Condition>
+<Amount currency="USD">50</Amount>
+</Discount>
+</Discounts>
+</Pricing>
+</Tier>
+<Tier>
+<id>2.1.2</id>
+<Name>Premium</Name>
+<Description>Enhanced personal knowledge base with custom features and personalized training</Description>
+<Deliverables>
+<Deliverable>All Standard tier features</Deliverable>
+<Deliverable>Personalized training session (90 minutes)</Deliverable>
+<Deliverable>Custom theme elements</Deliverable>
+<Deliverable>Advanced plugin configuration</Deliverable>
+<Deliverable>Development of one bespoke feature/module</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">1250</BasePrice>
+<Discounts>
+<Discount>
+<Condition>Promotional footer placement</Condition>
+<Amount currency="USD">100</Amount>
+</Discount>
+<Discount>
+<Condition>Payment in DAI or USDC</Condition>
+<Amount currency="USD">50</Amount>
+</Discount>
+</Discounts>
+</Pricing>
+</Tier>
+</Tiers>
+</Package>
+<!--  ORGANIZATIONAL KB PACKAGES  -->
+<Package>
+<id>2.2</id>
+<Name>Team Knowledge Base</Name>
+<Description>Setup of team-based knowledge management systems with collaboration features</Description>
+<Tiers>
+<Tier>
+<id>2.2.1</id>
+<Name>Standard</Name>
+<Description>Team knowledge base setup with git submodules and basic training</Description>
+<Deliverables>
+<Deliverable>Creation of a git-enabled Quartz knowledge base</Deliverable>
+<Deliverable>Basic personalization of the architecture</Deliverable>
+<Deliverable>CNAME and DNS configuration</Deliverable>
+<Deliverable>Custom rules framework for Cursor</Deliverable>
+<Deliverable>Git submodules for team collaboration</Deliverable>
+<Deliverable>One team training session (60 minutes)</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">1500</BasePrice>
+<Discounts>
+<Discount>
+<Condition>Promotional footer placement</Condition>
+<Amount currency="USD">100</Amount>
+</Discount>
+<Discount>
+<Condition>Payment in DAI or USDC</Condition>
+<Amount currency="USD">50</Amount>
+</Discount>
+</Discounts>
+</Pricing>
+<PreviousWork>
+<Example>
+<Name>Ethereum Localism</Name>
+<URL>https://www.ethereumlocalism.xyz/</URL>
+<Description>Organizational knowledge base for community collaborative research</Description>
+<Date>2023-03-10</Date>
+</Example>
+<Example>
+<Name>SuperBenefit Knowledge Garden</Name>
+<URL>https://knowledge.superbenefit.org/</URL>
+<Description>Personal knowledge base with custom theme and Arweave integration</Description>
+<Date>2023-05-20</Date>
+</Example>
+<Example>
+<Name>Sensemaking Scenius</Name>
+<URL>https://www.scenius.space/</URL>
+<Description>Knowledge base featuring custom graph visualization and advanced metadata</Description>
+<Date>2023-08-15</Date>
+</Example>
+</PreviousWork>
+</Tier>
+<Tier>
+<id>2.2.2</id>
+<Name>Premium</Name>
+<Description>Enhanced team knowledge base with advanced collaboration features and workflow integration</Description>
+<Deliverables>
+<Deliverable>All Standard Org tier features</Deliverable>
+<Deliverable>Advanced Git submodule strategy for teams</Deliverable>
+<Deliverable>Dedicated admin training (90 minutes)</Deliverable>
+<Deliverable>Workflow integration consultation</Deliverable>
+<Deliverable>Development of one bespoke organizational feature</Deliverable>
+<Deliverable>Content structure optimization</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">2500</BasePrice>
+<Discounts>
+<Discount>
+<Condition>Promotional footer placement</Condition>
+<Amount currency="USD">100</Amount>
+</Discount>
+<Discount>
+<Condition>Payment in DAI or USDC</Condition>
+<Amount currency="USD">50</Amount>
+</Discount>
+</Discounts>
+</Pricing>
+</Tier>
+</Tiers>
+</Package>
+<!--  KNOWLEDGE RETAINER  -->
+<Retainer>
+<id>2.3</id>
+<Name>Unified Knowledge Retainer</Name>
+<Description>Technical maintenance, strategic guidance, and knowledge structure optimization</Description>
+<Services>
+<Service>Technical maintenance (software updates, troubleshooting, backup verification)</Service>
+<Service>Monthly knowledge structure review and optimization consultation (60-min call)</Service>
+<Service>Basic usage analytics and improvement recommendations</Service>
+<Service>Limited ad-hoc support via email (48-hour response time)</Service>
+</Services>
+<Pricing>
+<RecurringPrice frequency="monthly" currency="USD">350</RecurringPrice>
+<MinimumTerm unit="months">3</MinimumTerm>
+</Pricing>
+<AddOnModules>
+<Module>
+<id>2.3.1</id>
+<Name>Custom Ontology Development</Name>
+<Description>Design and implementation of sophisticated metadata schemas and taxonomies</Description>
+<Pricing>
+<SetupFee currency="USD">750</SetupFee>
+<RecurringFee frequency="monthly" currency="USD">150</RecurringFee>
+</Pricing>
+<Deliverables>
+<Deliverable>Rich Frontmatter Schema Development</Deliverable>
+<Deliverable>Knowledge Structure Design</Deliverable>
+<Deliverable>Schema Implementation</Deliverable>
+<Deliverable>Machine Readability optimization</Deliverable>
+<Deliverable>Quartz-Specific Optimizations</Deliverable>
+</Deliverables>
+</Module>
+<Module>
+<id>2.3.2</id>
+<Name>Extended Training</Name>
+<Description>Additional training sessions for new team members or advanced features</Description>
+<Pricing>
+<PerSessionFee currency="USD">250</PerSessionFee>
+</Pricing>
+</Module>
+<Module>
+<id>2.3.3</id>
+<Name>Content Migration</Name>
+<Description>Assistance with importing content from other systems</Description>
+<Pricing>
+<RangeFee min="500" max="1500" currency="USD">Based on volume</RangeFee>
+</Pricing>
+</Module>
+<Module>
+<id>2.3.4</id>
+<Name>Feature Development</Name>
+<Description>Custom component or plugin development for specific client needs</Description>
+<Pricing>
+<CustomQuote>Based on requirements</CustomQuote>
+</Pricing>
+</Module>
+</AddOnModules>
+<Testimonials>
+<Testimonial>
+<ClientInfo>
+<Name>Michael Torres</Name>
+<Position>Knowledge Manager</Position>
+<Company>TechOrg Inc</Company>
+</ClientInfo>
+<Quote>The unified retainer has been invaluable. Having both technical support and strategic guidance in one package ensures our knowledge base continuously evolves with our organization.</Quote>
+<Date>2024-02-15</Date>
+</Testimonial>
+</Testimonials>
+</Retainer>
+</Offering>
+</Service>
+<!--  BRANDING SERVICES  -->
+<Service>
+<Metadata>
+<id>3</id>
+<Name>Branding</Name>
+<Category>Branding</Category>
+<Description>Developing cohesive visual and verbal identities for organizations, focusing on clarity, consistency, and impact.</Description>
+<Keywords>branding,logo design,brand messaging,visual identity,positioning</Keywords>
+</Metadata>
+<Provider>
+<Name>Clinamenic LLC</Name>
+<ContactPerson>Spencer Saar Cavanaugh</ContactPerson>
+<Website>https://www.clinamenic.com</Website>
+</Provider>
+<Offering>
+<!--  BRAND KIT PACKAGES  -->
+<Package>
+<id>3.1</id>
+<Name>Brand Kit</Name>
+<Description> Development of visual identity systems for organizations</Description>
+<Tiers>
+<Tier>
+<id>3.1.1</id>
+<Name>Essential</Name>
+<Description>Foundational visual identity with core brand elements</Description>
+<Deliverables>
+<Deliverable>Logo design (2 concepts, 2 rounds of revisions)</Deliverable>
+<Deliverable>Basic color palette (primary/secondary colors)</Deliverable>
+<Deliverable>Font selection and basic typography guidelines</Deliverable>
+<Deliverable>Basic brand usage guide (PDF)</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">1800</BasePrice>
+</Pricing>
+</Tier>
+<Tier>
+<id>3.1.2</id>
+<Name>Comprehensive</Name>
+<Description>Complete visual identity system with extended brand assets</Description>
+<Deliverables>
+<Deliverable>Discovery workshop</Deliverable>
+<Deliverable>Logo system (primary, secondary, icon versions)</Deliverable>
+<Deliverable>Extended color palette with usage guidelines</Deliverable>
+<Deliverable>Typography system (headline, body, accent fonts)</Deliverable>
+<Deliverable>Basic brand voice and tone notes</Deliverable>
+<Deliverable>Visual element library (patterns, graphics)</Deliverable>
+<Deliverable>Comprehensive brand guidelines document</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">3500</BasePrice>
+</Pricing>
+</Tier>
+</Tiers>
+</Package>
+<!--  CAMPAIGN KIT PACKAGES  -->
+<Package>
+<id>3.2</id>
+<Name>Campaign Kit</Name>
+<Description>Specialized visual assets for campaigns and events by established brands</Description>
+<Tiers>
+<Tier>
+<id>3.2.1</id>
+<Name>Essential</Name>
+<Description>Core campaign visual identity and basic assets</Description>
+<Deliverables>
+<Deliverable>Campaign concept development (2 concepts)</Deliverable>
+<Deliverable>Campaign key visual</Deliverable>
+<Deliverable>Basic asset templates (social media, email header)</Deliverable>
+<Deliverable>Color and typography specifications based on brand guidelines</Deliverable>
+<Deliverable>Campaign style guide (PDF)</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">1500</BasePrice>
+</Pricing>
+</Tier>
+<Tier>
+<id>3.2.2</id>
+<Name>Comprehensive</Name>
+<Description>Full-scale campaign identity system with extended asset production</Description>
+<Deliverables>
+<Deliverable>Campaign strategy workshop</Deliverable>
+<Deliverable>Campaign concept development (3 concepts, 2 rounds of refinement)</Deliverable>
+<Deliverable>Campaign key visual system (primary and secondary visuals)</Deliverable>
+<Deliverable>Extended asset production:</Deliverable>
+<Deliverable>- Social media templates (5 formats)</Deliverable>
+<Deliverable>- Email marketing templates (header, footer, body sections)</Deliverable>
+<Deliverable>- Digital ad templates (3 standard sizes)</Deliverable>
+<Deliverable>- Presentation/slide deck template</Deliverable>
+<Deliverable>Campaign visual style guide with usage examples</Deliverable>
+<Deliverable>Asset organization system and file delivery</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">3500</BasePrice>
+</Pricing>
+</Tier>
+<Tier>
+<id>3.2.3</id>
+<Name>Event</Name>
+<Description>Specialized campaign assets optimized for physical and virtual events</Description>
+<Deliverables>
+<Deliverable>All Comprehensive tier deliverables</Deliverable>
+<Deliverable>Event-specific assets:</Deliverable>
+<Deliverable>- Signage and wayfinding templates</Deliverable>
+<Deliverable>- Backdrop and stage design concepts</Deliverable>
+<Deliverable>- Name badges and printed materials</Deliverable>
+<Deliverable>- Virtual event graphics (backgrounds, overlays, transitions)</Deliverable>
+<Deliverable>- Event photography/videography shot list and style guide</Deliverable>
+<Deliverable>Post-event asset package for follow-up communications</Deliverable>
+</Deliverables>
+<Pricing>
+<BasePrice currency="USD">4000</BasePrice>
+</Pricing>
+</Tier>
+</Tiers>
+</Package>
+</Offering>
+</Service>
+</Services>
