@@ -20,6 +20,7 @@ in sync when subcommands change; copy commands from the script, never invent.
 
 ## Notes for agents
 
-- Edits to the catalog belong in `clinamenic_service.xml` (via the processor's
-  edit command), not in derived outputs.
+- Edits to the catalog belong in `clinamenic_service.xml` (via `crud`), not in
+  derived outputs. `crud` implements `list`, `get`, and `delete`; `add` and
+  `update` are accepted but not implemented.
 - Verify subcommand names against `service_processor.py` before documenting.
