@@ -3,7 +3,7 @@
 ## Layout
 
 Two-file toolkit: the XML catalog and the processor script. The processor's
-subcommands (validate, convert, report, chart, edit) all accept `--xml`;
+subcommands (validate, convert, report, visualize, crud) all accept `--xml`;
 `validate --check-ids` additionally enforces consistent ID formats.
 
 ## Conventions observed

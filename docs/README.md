@@ -8,7 +8,7 @@ validates, converts, reports on, charts, and edits it.
 ## Repository map
 
 - `clinamenic_service.xml` — the catalog (source of truth)
-- `service_processor.py` — all operations (validate / convert / report / chart / edit)
+- `service_processor.py` — all operations (validate / convert / report / visualize / crud)
 - `docs/` — this documentation
 
 ## Running
@@ -19,5 +19,5 @@ python service_processor.py convert --xml clinamenic_service.xml --format json -
 python service_processor.py convert --xml clinamenic_service.xml --format csv  --output out/
 ```
 
-All commands take `--xml`. Python 3 standard library only; `matplotlib`
+All commands take `--xml`. Python 3.9+ standard library only; `matplotlib`
 optional, needed only for chart outputs. Full command reference: root `README.md`.

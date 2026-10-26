@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import List, Optional, Union
+from typing import List, Optional
 import xml.etree.ElementTree as ET
 from enum import Enum
 
@@ -14,16 +14,6 @@ def safe_float(value: Optional[str], default: float = 0.0) -> float:
         print(f"Warning: Could not convert '{value}' to float. Using default {default}.")
         return default
 
-def safe_int(value: Optional[str], default: int = 0) -> int:
-    """Safely convert a string to int with a default value on error."""
-    if value is None:
-        return default
-    try:
-        return int(value)
-    except (ValueError, TypeError):
-        print(f"Warning: Could not convert '{value}' to int. Using default {default}.")
-        return default
-
 def safe_enum_convert(value: Optional[str], enum_class: type, default_value) -> any:
     """Safely convert a string to an enum value with a default on error."""
     if value is None:
@@ -33,13 +23,6 @@ def safe_enum_convert(value: Optional[str], enum_class: type, default_value) -> 
     except (ValueError, TypeError):
         print(f"Warning: '{value}' is not a valid {enum_class.__name__}. Using default {default_value.value}.")
         return default_value
-
-def safe_find_text(element: Optional[ET.Element], tag_name: str, default: str = "") -> str:
-    """Safely get text from an element's child, handling None elements."""
-    if element is None:
-        return default
-    child = element.find(tag_name)
-    return child.text if child is not None and child.text else default
 
 # --- Enums for controlled vocabularies ---
 
@@ -740,14 +723,16 @@ class ServiceCatalog:
             tree = ET.parse(file_path)
             root = tree.getroot()
             
-            # Handle namespace if present
-            namespace_map = {}
+            # Handle namespace if present: keep it for serialization, then strip the
+            # {namespace} prefixes so the unqualified child lookups in the parsers work.
             if '}' in root.tag:
                 self.xml_namespace = root.tag.split('}')[0][1:] # Extract from root tag like {namespace}Services
-                namespace_map = {'ns': self.xml_namespace}
+                for element in root.iter():
+                    if '}' in element.tag:
+                        element.tag = element.tag.split('}', 1)[1]
 
             self.services = []
-            service_elements = root.findall("ns:Service", namespace_map) if namespace_map else root.findall("Service")
+            service_elements = root.findall("Service")
 
             for service_el in service_elements:
                 try:
@@ -1400,7 +1385,6 @@ class ServiceCatalog:
         """
         try:
             import matplotlib.pyplot as plt
-            import numpy as np
         except ImportError:
             return "Error: matplotlib is required for chart generation. Install with 'pip install matplotlib'."
         

@@ -6,7 +6,7 @@ The point is that pricing and offerings live in one structured, diffable file ra
 
 ## Requirements
 
-Python 3 (standard library only). `matplotlib` is optional and needed only for the chart outputs.
+Python 3.9 or newer (standard library only). `matplotlib` is optional and needed only for the chart outputs.
 
 ```bash
 pip install matplotlib
@@ -32,13 +32,15 @@ python service_processor.py visualize --xml clinamenic_service.xml --type prices
 python service_processor.py visualize --xml clinamenic_service.xml --type categories --output category_chart.png
 python service_processor.py visualize --xml clinamenic_service.xml --type d3         --output graph.json
 
-# Read and edit services in place
+# Read, inspect, and delete services
 python service_processor.py crud --xml clinamenic_service.xml --operation list
-python service_processor.py crud --xml clinamenic_service.xml --operation get    --service-id SVC-01
-python service_processor.py crud --xml clinamenic_service.xml --operation update  --service-id SVC-01 --json-input patch.json --output clinamenic_service.xml
+python service_processor.py crud --xml clinamenic_service.xml --operation get    --service-id 1
+python service_processor.py crud --xml clinamenic_service.xml --operation delete --service-id 1 --output clinamenic_service.xml
 ```
 
 CSV conversion writes four files into the output directory: `services.csv`, `packages.csv`, `tiers.csv`, and `retainers.csv`.
+
+Service IDs in the catalog are numeric (`1`, `2`, `3`). `--check-ids` additionally enforces package IDs of the form `service_id.n` and tier IDs of the form `service_id.package_num.tier_num`. `crud --operation add` and `--operation update` are accepted by the parser but not implemented — they print a notice and write no file.
 
 ## Data model
 
