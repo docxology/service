@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "service"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+repository-code: "https://github.com/docxology/service"
+abstract: "Python service-catalog toolkit built on an XML schema (clinamenic_service.xml) — parses packages, tiers, retainers, and flat/recurring/tiered pricing into dataclasses, then validates IDs and exports JSON, CSV, D3.js graph data, and matplotlib price-comparison charts from one CLI."
+license: MIT
