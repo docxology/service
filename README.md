@@ -49,3 +49,7 @@ The XML is parsed into typed dataclasses: `ServiceCatalog` holds `Metadata`, a `
 ## Adapting it
 
 Point `--xml` at your own catalog file. The schema is defined implicitly by the dataclasses at the top of `service_processor.py`; `clinamenic_service.xml` doubles as the worked example.
+
+## License
+
+Released under the [MIT License](LICENSE).
