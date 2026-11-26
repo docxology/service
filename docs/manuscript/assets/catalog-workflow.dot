@@ -1,0 +1,16 @@
+digraph catalog_workflow {
+  graph [bgcolor="white", nodesep=0.28, ranksep=0.44, dpi=180];
+  node [shape=box, style="rounded,filled", color="#254B55", fillcolor="#EEF6F4",
+        fontname="DejaVu Sans", fontsize=11, margin="0.14,0.10"];
+  edge [color="#254B55", arrowsize=0.72];
+
+  xml [label="Clinamenic catalog XML"];
+  model [label="Parsed service catalog\nServices, packages, tiers, retainers"];
+  checks [label="Validation\nStructure and IDs"];
+  json_csv [label="Conversion\nJSON and CSV"];
+  reports [label="Reports\nCounts and prices"];
+  viz [label="Visualization\nD3 JSON and PNG"];
+
+  xml -> model;
+  model -> {checks json_csv reports viz};
+}

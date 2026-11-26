@@ -20,3 +20,6 @@ dist/
 Thumbs.db
 .idea/
 .vscode/
+
+# Generated manuscript artifacts
+/output/
