@@ -1,0 +1,23 @@
+paper:
+  title: "Maintaining a Professional Services Catalog in XML"
+
+authors:
+  - name: "Daniel Ari Friedman"
+    orcid: "0000-0001-6232-9096"
+
+publication:
+  repository_url: "https://github.com/docxology/service"
+
+metadata:
+  license: "MIT"
+  language: "en"
+
+manuscript_dir: "docs/manuscript"
+
+render:
+  formats:
+    pdf: true
+    html: false
+    slides: false
+    docx: false
+    epub: false

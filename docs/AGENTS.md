@@ -1,26 +1,8 @@
-# service — Agent Guide
+# service documentation
 
-## Layout
+`README.md` in this directory is the maintained user guide. Verify flags,
+validation behavior and output coverage against `../service_processor.py`.
 
-Two-file toolkit: the XML catalog and the processor script. The processor's
-subcommands (validate, convert, report, visualize, crud) all accept `--xml`;
-`validate --check-ids` additionally enforces consistent ID formats.
-
-## Conventions observed
-
-- Standard library only by default; matplotlib is an optional dependency for
-  chart outputs (per root `README.md`).
-- The XML file is the single source of truth — every downstream artifact is
-  regenerated from it, never hand-maintained separately.
-
-## How docs here are maintained
-
-Root `README.md` documents the full command surface. Keep `docs/README.md`
-in sync when subcommands change; copy commands from the script, never invent.
-
-## Notes for agents
-
-- Edits to the catalog belong in `clinamenic_service.xml` (via `crud`), not in
-  derived outputs. `crud` implements `list`, `get`, and `delete`; `add` and
-  `update` are accepted but not implemented.
-- Verify subcommand names against `service_processor.py` before documenting.
+Keep manuscript sections, bibliography, configuration and figure sources in
+`manuscript/`. The manuscript README describes the pinned renderer setup.
+Keep generated output outside the maintained docs tree.
