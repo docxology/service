@@ -15,7 +15,7 @@ dot -Tpng assets/catalog-workflow.dot -o assets/catalog-workflow.png
 
 ## Render and validate
 
-Use a clean checkout and a separate copy of the
+Use a clean Git checkout named `service` and a separate copy of the
 [pinned template](https://github.com/docxology/template/tree/87704feae0a4490ef7dad9c931d268e8c30273c2).
 Install Git, uv, Pandoc, XeLaTeX, and the TeX prerequisites in the template's
 [setup guide](https://github.com/docxology/template/blob/87704feae0a4490ef7dad9c931d268e8c30273c2/docs/guides/startup-and-setup.md).
